@@ -30,17 +30,17 @@ The Power BI dashboard is designed to help users quickly understand recruitment 
 
 ## Power BI Work Completed
 
-# 1. Data Connection & Validation  
+### 1. Data Connection & Validation  
 - Connected Power BI to cleaned job datasets  
 - Verified data accuracy and consistency  
 - Structured fields for efficient analysis  
 
-# 2. Dashboard Design  
+### 2. Dashboard Design  
 - Designed a clear and user-friendly dashboard layout  
 - Applied consistent formatting and visual themes  
 - Organized visuals for easy navigation and readability  
 
-# 3. Visual Analytics Implementation  
+### 3. Visual Analytics Implementation  
 - Created KPI cards to display key metrics  
 - Built visuals for:
   - Job count by location
@@ -49,7 +49,7 @@ The Power BI dashboard is designed to help users quickly understand recruitment 
   - Skill demand analysis
   - Remote vs onsite job distribution  
 
-# 4. Interactivity & Filtering  
+### 4. Interactivity & Filtering  
 - Implemented slicers for:
   - Job location
   - Job role
