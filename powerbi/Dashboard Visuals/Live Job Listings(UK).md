@@ -1,8 +1,6 @@
 # Live Job Listings (UK)
 
-![Uploading Job Listing.png.jpeg…]()
-
-
+<img width="766" height="417" alt="Job Listing" src="https://github.com/user-attachments/assets/4087710e-42ef-4984-ad5e-ed48458921d5" />
 
 **Description**: 
 This table provides a detailed view of live job opportunities across the United Kingdom. It displays individual job records with key attributes such as company name, job title, location, salary range, experience required, and employment type.
