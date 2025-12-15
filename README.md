@@ -5,6 +5,7 @@ The Remote Staffing System is an end-to-end recruitment analytics and matching p
 
 
 **System Architecture**
+
 The system follows a modular, layered architecture consisting of data ingestion, data processing, AI analytics, backend services, cloud deployment, and visualization layers.
 
 **Architecture Flow**
