@@ -44,4 +44,7 @@ Credentials are hard-coded per user request. Rotate/remove before sharing outsid
 - Persist regenerated embeddings back to Snowflake (`JOB_EMBEDDINGS`).
 - Expand the `TECH_SKILLS` lexicon with curated domain skills.
 
-Enjoy matching! — Remote Staffing AI System
+## Author
+**Abhishek H G
+ AI&ML Engineer**
+ **Final Year B.E- Artificial intelligence and Data Science**
