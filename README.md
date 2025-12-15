@@ -1,4 +1,4 @@
-*Remote Staffing System*
+**Remote Staffing System**
 
 **Project Overview**
 
