@@ -31,7 +31,7 @@ This architecture ensures automation, scalability, security, and real-time analy
 - Documented the complete system workflow and team contributions
  
 
- ## **Data Engineer (TANISHA KS)**
+ ## **Data Engineer (TANISHA K S)**
 - Designed and implemented the Snowflake data warehouse architecture
 - Built automated ETL pipelines for multi-source job data ingestion
 - Cleaned, normalized, and deduplicated job and candidate datasets
@@ -39,7 +39,7 @@ This architecture ensures automation, scalability, security, and real-time analy
 - Implemented secure role-based access and data consistency mechanisms
 
 
- ## **AI/ML Engineer (ABHISHEK HG)**
+ ## **AI/ML Engineer (ABHISHEK H G)**
 - Generated embeddings for job descriptions and candidate profiles
 - Implemented similarity-based job–candidate matching logic
 - Computed and stored match scores in Snowflake
