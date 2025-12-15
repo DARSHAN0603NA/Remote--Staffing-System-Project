@@ -1,4 +1,4 @@
-# Remote Staffing System – Data Engineering
+# Remote Staffing System – Data Engineer
 
 ## Overview
 This repository contains the complete data engineering implementation for the Remote Staffing System. The data pipeline is designed to automate job data ingestion, manage structured storage, perform transformations, and deliver analytics-ready datasets for AI processing and Power BI dashboards.
