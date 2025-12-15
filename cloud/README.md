@@ -12,7 +12,7 @@ The AWS infrastructure is designed to be **secure, scalable, production-ready**,
 - **Student Name:** Meghana B  
 - **USN:** 1MP22AD033  
 - **Cloud Platform:** Amazon Web Services (AWS)  
-- **Project Status:** 100% Completed  
+- **Project Status:** 90% Completed  
 
 ---
 
