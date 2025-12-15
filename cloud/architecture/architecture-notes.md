@@ -24,4 +24,3 @@ flowchart TD
 * Monitoring ensures system health.
 * Analytics provides insights and reporting.
 
-GitHub will render the Mermaid diagram above automatically in the repository.
