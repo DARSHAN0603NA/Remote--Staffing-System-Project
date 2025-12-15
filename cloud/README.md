@@ -3,16 +3,8 @@
 This repository contains the **AWS cloud engineering, deployment, security, monitoring, and analytics integration work** completed for the academic project **Remote Job Portal – Full Stack and Data Analytics Integration**.
 
 The AWS infrastructure is designed to be **secure, scalable, production-ready**, and optimized for backend services and analytics workflows.
-
----
-
-## Project Information
-
-- **Project Title:** Remote Job Portal – Full Stack and Data Analytics Integration  
-- **Student Name:** Meghana B  
-- **USN:** 1MP22AD033  
-- **Cloud Platform:** Amazon Web Services (AWS)  
-- **Project Status:** 90% Completed  
+  
+    
 
 ---
 
