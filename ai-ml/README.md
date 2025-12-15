@@ -45,7 +45,11 @@ Credentials are hard-coded per user request. Rotate/remove before sharing outsid
 - Expand the `TECH_SKILLS` lexicon with curated domain skills.
 
 ## Author
-**Abhishek H G
- AI&ML Engineer**
+
+**Abhishek H G**
+
+ **AI&ML Engineer**
+ 
  **Final Year B.E- Artificial intelligence and Data Science**
+
 
