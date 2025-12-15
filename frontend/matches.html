@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="brand">RemoteStaffing</div>
+
+    <a href="index.html" class="menu-item">Dashboard</a>
+    <a href="upload-jd.html" class="menu-item">Upload JD</a>
+    <a href="upload-candidate.html" class="menu-item">Upload Candidate</a>
+    <a href="matches.html" class="menu-item active">Matches</a>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <input class="search" type="text" placeholder="Search..." />
+      <div class="user-box">S</div>
+    </div>
+
+    <div class="page-title">
+      <h1>Candidate Matches</h1>
+      <p>View ranked matches for any job posting.</p>
+    </div>
+
+    <!-- CARD -->
+    <div class="card large" style="margin-top:30px;">
+      <label>Job ID</label>
+      <input id="jobIdInput" placeholder="Paste job_id or auto-loaded" />
+
+      <button id="loadMatchesBtn" class="btn full" style="margin-top:15px;">Load Matches</button>
+    </div>
+
+    <!-- RESULT -->
+    <div class="card large" style="margin-top:25px;">
+      <h3>Matches</h3>
+      <pre id="matchesList" style="margin-top:15px; background:#1c2030; padding:15px; border-radius:10px;">{}</pre>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
