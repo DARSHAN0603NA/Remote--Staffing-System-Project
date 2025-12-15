@@ -86,4 +86,5 @@ This architecture ensures automation, scalability, security, and real-time analy
 
 
  **Conclusion**
+ 
 The Remote Staffing System demonstrates a complete, production-ready recruitment analytics solution integrating data engineering, AI processing, cloud deployment, backend services, and visualization. The project highlights how modern cloud-based architectures enable intelligent and data-driven hiring decisions.
