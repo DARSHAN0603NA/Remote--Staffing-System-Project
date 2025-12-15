@@ -31,5 +31,5 @@ Load jobs_cleaned.csv into Power BI
 Refresh data
 Interact using slicers (Location, Role, Company)
 
-**Author
+**Author:
 Darshan N A - Power BI Analyst**
