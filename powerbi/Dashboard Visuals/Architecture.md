@@ -23,10 +23,10 @@ flowchart TD
     PowerBI_Service --> Users
     PowerBI_Service --> Data_Refresh
     Users --> Insights
-    ```
+```
 
 
-## **Architecture Explanation**
+##  Architecture Explanation
 
 
 The Power BI analytics architecture is built on top of the Snowflake Data Warehouse, which stores cleaned and analytics-ready job data in the CLEAN and BI schemas. This ensures that only high-quality, standardized data is used for reporting and analysis.
