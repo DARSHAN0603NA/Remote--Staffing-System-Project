@@ -1,15 +1,15 @@
 # **Remote Staffing System**
 
-##**Project Overview**
+## **Project Overview**
 
 The Remote Staffing System is an end-to-end recruitment analytics and matching platform designed to automate job data collection, enable AI-based job–candidate matching, and provide real-time recruitment insights through dashboards. The system integrates multiple job platforms, cloud-based data processing, AI components, backend services, and visualization tools into a single scalable solution.
 
 
-##**System Architecture**
+## **System Architecture**
 
 The system follows a modular, layered architecture consisting of data ingestion, data processing, AI analytics, backend services, cloud deployment, and visualization layers.
 
-##**Architecture Flow**
+## **Architecture Flow**
 
 Job Platforms (JSearch, Adzuna, Jooble)  
 → Python-based ETL Pipelines  
