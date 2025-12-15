@@ -1,6 +1,7 @@
 **Remote Staffing System**
 
 **Project Overview**
+
 The Remote Staffing System is an end-to-end recruitment analytics and matching platform designed to automate job data collection, enable AI-based job–candidate matching, and provide real-time recruitment insights through dashboards. The system integrates multiple job platforms, cloud-based data processing, AI components, backend services, and visualization tools into a single scalable solution.
 
 
