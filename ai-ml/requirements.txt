@@ -1,0 +1,12 @@
+streamlit>=1.20
+snowflake-connector-python
+snowflake-snowpark-python
+PyPDF2
+sentence-transformers
+transformers
+scikit-learn
+pandas
+numpy
+plotly
+tqdm
+torch
