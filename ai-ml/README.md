@@ -1,4 +1,4 @@
-# Remote Staffing AI System
+# Remote Staffing System
 
 This repository hosts the **Remote Staffing AI System**, a Streamlit experience that ranks open positions against an uploaded resume using embeddings, skill overlap, and seniority checks.
 
@@ -48,3 +48,4 @@ Credentials are hard-coded per user request. Rotate/remove before sharing outsid
 **Abhishek H G
  AI&ML Engineer**
  **Final Year B.E- Artificial intelligence and Data Science**
+
