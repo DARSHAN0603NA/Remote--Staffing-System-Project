@@ -1,4 +1,4 @@
-### Filter Panel – Dashboard Controls
+# Filter Panel – Dashboard Controls
 
 <img width="150" height="360" alt="Filter Panel" src="https://github.com/user-attachments/assets/d9db92bc-77b9-4874-af4d-89db8a4fc161" />
 
