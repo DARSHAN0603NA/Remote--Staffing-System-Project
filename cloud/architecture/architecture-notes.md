@@ -181,37 +181,6 @@ This architecture ensures a **secure, scalable, and maintainable cloud foundatio
 
 
 
-GitHub will render this automatically.
-
----
-
-# 🟢 4️⃣ REAL AWS CODE FILES (PROOF OF WORK)
-
-These make your repo look **REAL**.
-
----
-
-## 🔐 IAM POLICY
-
-📄 `cloud/iam/iam-policies.json`
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": ["s3:GetObject", "s3:PutObject"],
-      "Resource": "arn:aws:s3:::remote-job-portal-*/*"
-    },
-    {
-      "Effect": "Allow",
-      "Action": ["logs:PutLogEvents"],
-      "Resource": "*"
-    }
-  ]
-}
-
 
 
 
