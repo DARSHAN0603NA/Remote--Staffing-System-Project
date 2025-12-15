@@ -1,0 +1,12 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "properties": {
+        "metrics": [["AWS/ECS", "CPUUtilization"]],
+        "period": 300,
+        "stat": "Average"
+      }
+    }
+  ]
+}
