@@ -97,7 +97,10 @@ The dashboard provides a comprehensive and interactive view of the job market, e
 
 ## Author
 
-**Darshan N A  
-Power BI Analyst**
+**Darshan N A** 
+
+**Power BI Analyst**
+
+**Final Year B.E- Artificial intelligence and Data Science**
 
 
