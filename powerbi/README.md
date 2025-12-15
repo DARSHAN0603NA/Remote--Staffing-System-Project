@@ -75,8 +75,8 @@ The Power BI dashboard is designed to help users quickly understand recruitment 
 - Total job openings
 - Average salary
 - Top hiring company
-- Most required skill
-- Percentage of remote jobs
+- UK jobs only
+- Total companies
 
 ---
 
