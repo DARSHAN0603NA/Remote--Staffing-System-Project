@@ -1,35 +1,103 @@
-**Project Overview**
-This Power BI project visualizes job market trends using cleaned job listing data. The dashboard helps users understand hiring patterns, salary trends, and skill demand across industries.
+**Remote Staffing System – Power BI Dashboard & Visual Analytics**
+
+This repository contains the Power BI dashboard and visual analytics work for the Remote Staffing System project. The dashboard provides clear insights into job market trends, hiring patterns, salary distribution, and skill demand using cleaned job listing data.
+
+---
+
+**Dashboard Overview**
+The Power BI dashboard is designed to help users quickly understand recruitment trends through interactive visuals and key performance indicators. It enables data-driven decision-making by presenting job-related insights in a simple and intuitive format.
+
+---
 
 **Objectives**
-Visualize live job listings
-Highlight top hiring companies
-Show salary distribution
-Identify in-demand skills
-Compare remote vs onsite jobs
+
+- Visualize live job listings
+- Highlight top hiring companies
+- Analyze salary ranges across roles
+- Identify in-demand skills
+- Compare remote and onsite job availability
+- Understand employment type distribution
+
+---
 
 **Tools Used**
-Power BI Desktop
-Excel / CSV as Data Source
-Dashboard Features
-Live Job Listing Table
-Job Count by Location
-Salary Range Comparison
-Employment Type Breakdown
-Skill Demand Visualization
-Remote Job Indicator
-KPIs Displayed
-Total Job Openings
-Average Salary
-Top Hiring Company
-Most Required Skill
-% Remote Jobs
+
+- Power BI Desktop
+- CSV / Excel datasets
+- Snowflake (as the data source)
+
+---
+
+**Power BI Work Completed**
+
+1. Data Connection & Validation  
+- Connected Power BI to cleaned job datasets  
+- Verified data accuracy and consistency  
+- Structured fields for efficient analysis  
+
+2. Dashboard Design  
+- Designed a clear and user-friendly dashboard layout  
+- Applied consistent formatting and visual themes  
+- Organized visuals for easy navigation and readability  
+
+3. Visual Analytics Implementation  
+- Created KPI cards to display key metrics  
+- Built visuals for:
+  - Job count by location
+  - Salary range comparison
+  - Employment type breakdown
+  - Skill demand analysis
+  - Remote vs onsite job distribution  
+
+4. Interactivity & Filtering  
+- Implemented slicers for:
+  - Job location
+  - Job role
+  - Company
+- Enabled cross-filtering across visuals for dynamic analysis  
+
+---
+
+**Dashboard Features**
+
+- Live job listings table
+- Job count by location
+- Salary distribution visuals
+- Employment type overview
+- Skill demand visualization
+- Remote job indicator
+- Interactive slicers and filters
+
+---
+
+**KPIs Displayed**
+
+- Total job openings
+- Average salary
+- Top hiring company
+- Most required skill
+- Percentage of remote jobs
+
+---
 
 **How to Use**
-Open Job_Dashboard.pbix
-Load jobs_cleaned.csv into Power BI
-Refresh data
-Interact using slicers (Location, Role, Company)
 
-**Author:
-Darshan N A - Power BI Analyst**
+1. Open Job_Dashboard.pbix in Power BI Desktop  
+2. Load the cleaned job dataset (CSV / Excel)  
+3. Refresh the data  
+4. Use slicers and visuals to explore insights  
+
+---
+
+**Outcome**
+
+The dashboard provides a comprehensive and interactive view of the job market, enabling users to identify hiring trends, salary patterns, and skill demand efficiently. It serves as a reliable analytics layer for recruitment insights.
+
+---
+
+**Author** 
+
+**Darshan N A  
+Power BI Analyst**
+
+
