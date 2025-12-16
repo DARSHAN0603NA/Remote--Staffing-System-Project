@@ -86,3 +86,7 @@ AWS S3 stores system files and logs.
 - Scalable
 - Cost efficient
 
+## Practical guidance
+
+Use environment prefixes for buckets (e.g., `remote-staffing-raw-dev`). Enable default encryption (SSE-KMS) and consider object-level tagging for lifecycle and retention policies. Limit public access and serve public assets through CloudFront with signed URLs where needed.
+

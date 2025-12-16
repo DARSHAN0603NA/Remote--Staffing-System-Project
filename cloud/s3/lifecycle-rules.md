@@ -123,3 +123,9 @@ Implementation notes:
 - Be cautious with transition into Glacier Flexible Retrieval or Deep Archive — retrieval costs and latencies can be significant, so reserve deep archive for rarely-accessed, long-retention data.
 
 Operationally, lifecycle rules are a low-maintenance way to enforce retention policies and reduce costs while keeping the data governance process auditable.
+
+## Example usage notes
+
+- Test lifecycle rules in a staging bucket before applying to production.
+- Use S3 Inventory to verify transitions and expirations.
+- Document the business retention requirement (e.g., "retain reports for 7 years for compliance") and encode that in rules.
