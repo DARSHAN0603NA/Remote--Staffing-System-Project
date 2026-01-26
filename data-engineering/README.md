@@ -25,7 +25,7 @@ As the Data Engineer, my responsibility was to design, implement, and manage the
 - Python  
 - Snowflake Data Warehouse  
 - SQL  
-- REST APIs (JSearch, Adzuna, Jooble)  
+- REST APIs (Adzuna)  
 - Windows Task Scheduler  
 
 ---
@@ -34,9 +34,7 @@ As the Data Engineer, my responsibility was to design, implement, and manage the
 
 ### 1. Data Ingestion & ETL Pipelines
 - Developed Python-based ETL pipelines to ingest job data from:
-  - JSearch
   - Adzuna
-  - Jooble
 - Implemented pagination to handle large volumes of job listings
 - Converted raw API responses into structured datasets for processing
 
