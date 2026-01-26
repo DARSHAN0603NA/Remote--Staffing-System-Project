@@ -152,5 +152,7 @@ It demonstrates strong capability in:
 ## Author
 
 *Darshan N A*  
+
 Power BI Analyst
+
 Final Year BE-Artificial Intelligence and Data Science
