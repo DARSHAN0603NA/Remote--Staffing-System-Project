@@ -9,6 +9,9 @@ The Remote Staffing System is an end-to-end recruitment analytics and matching p
 
 The system follows a modular, layered architecture consisting of data ingestion, data processing, AI analytics, backend services, cloud deployment, and visualization layers.
 
+<img width="4123" height="2575" alt="Architecture Diag  Light" src="https://github.com/user-attachments/assets/df28d578-1928-4719-81ac-88543744b28a" />
+
+
 ## **Architecture Flow**
 
 Job Platform (Adzuna)  
