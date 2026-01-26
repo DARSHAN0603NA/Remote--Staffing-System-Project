@@ -25,11 +25,11 @@ This architecture ensures automation, scalability, security, and real-time analy
 
 
 ## **Power BI Analyst & Documentation (DARSHAN N A)**
-- Connected Power BI dashboards to Snowflake BI datasets
-- Designed interactive dashboards with KPIs and filters
-- Visualized job trends, skills demand, and recruitment metrics
-- Documented the complete system workflow and team contributions
- 
+- Designed and developed three role-based Power BI dashboards (Admin, Recruiter, Candidate) for a Remote Staffing System  
+- Built meaningful KPIs and business-focused visuals to track growth, performance, and platform health  
+- Implemented interactive features such as slicers, cross-filtering, and drill-down for better user exploration  
+- Applied data modeling and basic DAX measures to support accurate insights and analytics  
+- Documented dashboard objectives, features, and usage to clearly communicate project outcomes
 
  ## **Data Engineer (TANISHA K S)**
 - Designed and implemented the Snowflake data warehouse architecture
