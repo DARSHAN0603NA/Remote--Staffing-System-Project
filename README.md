@@ -11,7 +11,7 @@ The system follows a modular, layered architecture consisting of data ingestion,
 
 ## **Architecture Flow**
 
-Job Platforms (JSearch, Adzuna, Jooble)  
+Job Platform (Adzuna)  
 → Python-based ETL Pipelines  
 → Snowflake Data Warehouse (RAW → CLEAN → BI)  
 → AI & Embedding Generation  
