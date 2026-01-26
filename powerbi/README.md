@@ -1,106 +1,156 @@
-# Remote Staffing System – Power BI Dashboard & Visual Analytics
 
-This repository contains the Power BI dashboard and visual analytics work for the Remote Staffing System project. The dashboard provides clear insights into job market trends, hiring patterns, salary distribution, and skill demand using cleaned job listing data.
+# Remote Staffing System – Power BI Dashboards & Visual Analytics
+
+This repository contains the *Power BI dashboards and visual analytics work for the Remote Staffing System project*.  
+It includes three role-based dashboards:
+
+- *Admin Dashboard*  
+- *Recruiter Dashboard*  
+- *Candidate Dashboard*
+
+Together, these dashboards provide clear insights into platform performance, recruitment efficiency, and candidate trends using structured job, candidate, and match data.
 
 ---
 
 ## Dashboard Overview
-The Power BI dashboard is designed to help users quickly understand recruitment trends through interactive visuals and key performance indicators. It enables data-driven decision-making by presenting job-related insights in a simple and intuitive format.
+
+The dashboards are designed to support different stakeholders:
+
+- *Admin Dashboard* – Monitors platform health, data freshness, and overall growth  
+- *Recruiter Dashboard* – Focuses on candidate-job matching and hiring effectiveness  
+- *Candidate Dashboard* – Highlights candidate trends, role preferences, and onboarding patterns  
+
+All dashboards use interactive visuals and KPIs to enable *data-driven decision-making*.
 
 ---
 
 ## Objectives
 
-- Visualize live job listings
-- Highlight top hiring companies
-- Analyze salary ranges across roles
-- Identify in-demand skills
-- Compare remote and onsite job availability
-- Understand employment type distribution
+- Monitor jobs and candidates growth over time  
+- Track platform health using data refresh metrics  
+- Analyze candidate-job matching performance  
+- Understand hiring trends by title and location  
+- Identify demand by role and candidate preferences  
+- Provide stakeholder-specific insights (Admin, Recruiter, Candidate)  
 
 ---
 
 ## Tools Used
 
-- Power BI Desktop
-- CSV / Excel datasets
-- Snowflake (as the data source)
+- Power BI Desktop  
+- CSV datasets  
+- DAX (for calculated measures and KPIs)  
+- GitHub (for project version control and portfolio)  
 
 ---
 
 ## Power BI Work Completed
 
 ### 1. Data Connection & Validation  
-- Connected Power BI to cleaned job datasets  
-- Verified data accuracy and consistency  
-- Structured fields for efficient analysis  
+- Connected Power BI to job, candidate, and match datasets  
+- Verified data accuracy and handled missing values  
+- Structured tables for analysis (fact-style tables)  
 
 ### 2. Dashboard Design  
-- Designed a clear and user-friendly dashboard layout  
-- Applied consistent formatting and visual themes  
-- Organized visuals for easy navigation and readability  
+- Designed three separate dashboards for different user roles  
+- Applied consistent layout, formatting, and visual themes  
+- Organized visuals for clarity and easy interpretation  
 
 ### 3. Visual Analytics Implementation  
-- Created KPI cards to display key metrics  
+- Created KPI cards for key metrics  
 - Built visuals for:
-  - Job count by location
-  - Salary range comparison
-  - Employment type breakdown
-  - Skill demand analysis
-  - Remote vs onsite job distribution  
+  - Jobs ingested over time  
+  - Candidates onboarded over time  
+  - Jobs by title and location  
+  - Jobs by source  
+  - Candidates by role and requested role  
+  - Match score distribution  
+  - Matches per job  
+  - Platform health (latest refresh dates)  
 
 ### 4. Interactivity & Filtering  
 - Implemented slicers for:
-  - Job location
-  - Job role
-  - Company
-- Enabled cross-filtering across visuals for dynamic analysis  
+  - Role  
+  - Requested Role  
+  - Company  
+  - Location  
+- Enabled cross-filtering between visuals for dynamic exploration  
 
 ---
 
 ## Dashboard Features
 
-- Live job listings table
-- Job count by location
-- Salary distribution visuals
-- Employment type overview
-- Skill demand visualization
-- Remote job indicator
-- Interactive slicers and filters
+### Admin Dashboard
+- Jobs ingested over time  
+- Candidates onboarded over time  
+- Recruiter approved candidates  
+- Matches generated  
+- Platform health metrics (latest data refresh)  
+- Jobs by source  
+- Jobs by title  
+- Jobs by location  
+- Demand by requested role  
+
+### Recruiter Dashboard
+- Total candidates  
+- Total matches  
+- Average match score  
+- High quality matches %  
+- Match score distribution  
+- Matches per job  
+- Candidates by role  
+- Interactive slicers (Role, Requested Role, Company, Location)  
+
+### Candidate Dashboard
+- Total candidates  
+- Candidates onboarded over time  
+- Candidates by role  
+- Candidates by requested role  
+- Role-based trend insights  
+- Interactive exploration of candidate data  
 
 ---
 
 ## KPIs Displayed
 
-- Total job openings
-- Average salary
-- Top hiring company
-- UK jobs only
-- Total companies
+- Total Jobs  
+- Total Candidates  
+- Recruiter Approved Candidates  
+- Matches Generated  
+- Average Match Score  
+- High Quality Match %  
+- Latest Job Data Refresh  
+- Latest Candidate Data Refresh  
+- Jobs by Source  
+- Jobs by Title and Location  
 
 ---
 
 ## How to Use
 
-1. Open Job_Dashboard.pbix in Power BI Desktop  
-2. Load the cleaned job dataset (CSV / Excel)  
-3. Refresh the data  
-4. Use slicers and visuals to explore insights  
+1. Download any .pbix file from the repository  
+2. Open it in *Power BI Desktop*  
+3. Load the corresponding dataset if prompted  
+4. Refresh the data  
+5. Use slicers and visuals to explore insights  
 
 ---
 
 ## Outcome
 
-The dashboard provides a comprehensive and interactive view of the job market, enabling users to identify hiring trends, salary patterns, and skill demand efficiently. It serves as a reliable analytics layer for recruitment insights.
+This project delivers a *complete analytics solution for a Remote Staffing System* using three dashboards tailored to different stakeholders.  
+It demonstrates strong capability in:
+
+- Power BI dashboard design  
+- KPI creation  
+- Data storytelling  
+- Business-focused analytics  
+- End-to-end project presentation  
 
 ---
 
 ## Author
 
-**Darshan N A** 
-
-**Power BI Analyst**
-
-**Final Year B.E- Artificial intelligence and Data Science**
-
-
+*Darshan N A*  
+Power BI Analyst
+Final Year BE-Artificial Intelligence and Data Science
