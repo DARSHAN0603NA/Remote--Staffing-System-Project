@@ -63,7 +63,6 @@ The dashboard uses structured datasets including:
 - CREATED_AT  
 - INGESTION_DATE  
 
-### (Optional if included in your model)
 ### MATCHES_FACT
 - MATCH_ID  
 - JOB_ID  
