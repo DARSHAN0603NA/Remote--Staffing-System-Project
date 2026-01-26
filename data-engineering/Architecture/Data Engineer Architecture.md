@@ -13,7 +13,7 @@ The architecture is designed to be automated, scalable, secure, and suitable for
 ```mermaid
 flowchart TD
 
-    Job_Platforms["Job Data Platforms<br/>(JSearch, Adzuna, Jooble)"]
+    Job_Platforms["Job Data Platforms<br/>(Adzuna)"]
     ETL["Python ETL Pipelines"]
     RAW["Snowflake RAW Schema"]
     CLEANING["SQL Cleaning & Transformation"]
