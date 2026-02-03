@@ -1,24 +1,26 @@
-import os
 import json
 import uuid
 import logging
-import boto3
-import snowflake.connector
+from datetime import datetime
 from typing import Dict, Any
+
+import boto3
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # AWS clients
-ssm = boto3.client("ssm")
+dynamodb = boto3.resource("dynamodb")
 events = boto3.client("events")
 
 # ENV
-SSM_PREFIX = os.environ.get("SSM_PREFIX", "/remote-staffing/snowflake")
-EVENT_BUS = os.environ.get("EVENT_BUS", "default")
-CORS_ORIGIN = os.environ.get("CORS_ORIGIN", "*")
+CANDIDATES_TABLE = "Candidates"
+EVENT_BUS = "default"
+CORS_ORIGIN = "*"
 
-# ---------------- helpers ----------------
+table = dynamodb.Table(CANDIDATES_TABLE)
+
+# ---------- helpers ----------
 
 def build_response(status: int, body: Any) -> Dict:
     return {
@@ -32,33 +34,16 @@ def build_response(status: int, body: Any) -> Dict:
         "body": json.dumps(body)
     }
 
-def get_param(name: str) -> str:
-    return ssm.get_parameter(
-        Name=f"{SSM_PREFIX}/{name}",
-        WithDecryption=True
-    )["Parameter"]["Value"].strip()
-
-def get_sf_conn():
-    return snowflake.connector.connect(
-        user=get_param("user"),
-        password=get_param("password"),
-        account=get_param("account"),
-        role=get_param("role"),
-        warehouse=get_param("warehouse"),
-        database=get_param("database"),
-        schema=get_param("schema")
-    )
-
 def parse_body(event: Dict) -> Dict:
     body = event.get("body", {})
     if isinstance(body, str):
         return json.loads(body)
     return body
 
-# ---------------- handler ----------------
+# ---------- handler ----------
 
 def lambda_handler(event, context):
-    logger.info("Upload-candidate invoked")
+    logger.info("POST /candidates invoked")
 
     if event.get("httpMethod") == "OPTIONS":
         return build_response(200, {"ok": True})
@@ -66,32 +51,46 @@ def lambda_handler(event, context):
     try:
         payload = parse_body(event)
 
-        name = payload.get("name")
+        full_name = payload.get("name")
         email = payload.get("email")
         resume_text = payload.get("resume_text")
 
-        if not (name and email and resume_text):
-            return build_response(400, {"error": "name, email, resume_text required"})
+        # 🔹 NEW: requested_role from frontend
+        requested_role = payload.get("requested_role", "candidate")
+
+        if not all([full_name, email, resume_text]):
+            return build_response(400, {
+                "error": "name, email, resume_text are required"
+            })
+
+        # 🔒 Validate requested_role (intent only)
+        if requested_role not in ["candidate", "recruiter", "admin"]:
+            requested_role = "candidate"
 
         candidate_id = str(uuid.uuid4())
+        created_at = datetime.utcnow().isoformat()
 
-        # Insert into Snowflake
-        conn = get_sf_conn()
-        cur = conn.cursor()
+        # ✅ Store candidate in DynamoDB
+        table.put_item(
+            Item={
+                "candidate_id": candidate_id,
+                "full_name": full_name,
+                "email": email,
+                "resume_text": resume_text,
+                "source": "upload",
+                "created_at": created_at,
 
-        cur.execute("""
-            INSERT INTO JOB_PORTAL_DB.CLEAN.CANDIDATE_DATA_CLEANED
-            (CANDIDATE_ID, FULL_NAME, EMAIL, RESUME_TEXT)
-            VALUES (%s, %s, %s, %s)
-        """, (candidate_id, name, email, resume_text))
+                # 🔐 AUTHORITY (backend-controlled)
+                "role": "candidate",
 
-        conn.commit()
-        cur.close()
-        conn.close()
+                # 🧠 INTENT (frontend-controlled)
+                "requested_role": requested_role
+            }
+        )
 
-        # Emit EventBridge event
+        # ✅ Emit EventBridge event (for ML scoring later)
         events.put_events(Entries=[{
-            "Source": "remote-staffing.upload",
+            "Source": "remote-staffing.candidates",
             "DetailType": "CandidateUploaded",
             "EventBusName": EVENT_BUS,
             "Detail": json.dumps({
@@ -100,10 +99,11 @@ def lambda_handler(event, context):
         }])
 
         return build_response(200, {
-            "message": "Candidate uploaded",
-            "candidate_id": candidate_id
+            "message": "Candidate uploaded successfully",
+            "candidate_id": candidate_id,
+            "requested_role": requested_role
         })
 
     except Exception as e:
-        logger.exception("Upload-candidate failed")
+        logger.exception("Upload candidate failed")
         return build_response(500, {"error": str(e)})
